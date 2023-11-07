@@ -1,11 +1,13 @@
 
 <h1 align="center">Hi 👋, I'm Ciprian, most people know me as Cip!</h1>  
 <h3 align="center">Always fascinanted by the reasoning behind technology and over the years it has become my passion.</h3>  
-  
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=ciprianflorin-ifrim&label=Profile%20views&color=0e75b6&style=flat" alt="ciprianflorin-ifrim" /> </p>  
-  
-<p align="left">  <a href="https://github-profile-trophy.vercel.app/?username=ciprianflorin-ifrim&no-bg=true&theme=nord&no-frame=true&column=7&exclude=PullRequests,Reviews">  <img src="https://github-profile-trophy.vercel.app/?username=ciprianflorin-ifrim&no-bg=true&theme=nord&no-frame=true&column=7
-&title=MultiLanguage,Commits,Repositories,Issues,Stars,Followers,PullRequest" /> </a> </p>
+<p align="center"> <img src="https://komarev.com/ghpvc/?username=ciprianflorin-ifrim&label=Profile%20views&color=0e75b6&style=flat" alt="ciprianflorin-ifrim" /> </p>  
+<p align="center">
+  <a href="https://github.com/ciprianflorin-ifrim">
+    <img src="https://github-profile-trophy.vercel.app/?username=ciprianflorin-ifrim&no-bg=true&theme=nord&no-frame=true&column=7&title=MultiLanguage,Commits,Repositories,Issues,Stars,Followers,PullRequest" />
+  </a>
+</p>
+
   
 - 🌱 I’m currently learning **all about Large Language Models.**  
   

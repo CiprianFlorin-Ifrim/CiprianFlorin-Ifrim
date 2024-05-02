@@ -1,6 +1,6 @@
 
 <h1 align="center">Hi 👋, I'm Ciprian, most people know me as Cip!</h1>  
-<h3 align="center">Always fascinanted by the reasoning behind technology and over the years it has become my passion.</h3>  
+<h3 align="center">Always fascinated by the reasoning behind technology and over the years it has become my passion.</h3>  
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=ciprianflorin-ifrim&label=Profile%20views&color=0e75b6&style=flat" alt="ciprianflorin-ifrim" /> </p>  
 <p align="center">
   <a href="https://github.com/ciprianflorin-ifrim">

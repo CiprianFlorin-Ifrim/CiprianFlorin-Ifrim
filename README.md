@@ -9,11 +9,11 @@
 </p>
 
   
-- 🌱 I’m currently learning **all about Large Language Models.**  
+- 🌱 I’m currently learning to further my knowledge on **AI, from voice recognition, to image classification and Large Language Models.**  
   
-- 🔭 I’m currently working on a project based on my bachelor dissertation, [an offline smartwatch.](https://github.com/CiprianFlorin-Ifrim/AURI_Smartwatch_Software)  
+- 🔭 I’m currently working on the v2 of my BEng dissertation, [an offline smartwatch.](https://github.com/CiprianFlorin-Ifrim/AURI_Smartwatch_Software) as well as a `smart plant pot with edge ai`.
   
-- 💬 Ask me about **robotics, electronics, data analytics or AI at the edge on low-powered devices.**  
+- 💬 Ask me about **3D Modelling, Electronics, Robotics, Data Analytics or AI, especially at the edge on low-powered devices.**  
   
 <h3 align="left">Languages and Tools:</h3>
 <p align="left">

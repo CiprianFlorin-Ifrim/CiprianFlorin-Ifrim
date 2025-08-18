@@ -11,7 +11,7 @@
   
 - 🌱 I’m currently learning to further my knowledge on **AI, from voice recognition, to image classification and Large Language Models.**  
   
-- 🔭 I’m currently working on the v2 of my BEng project, [an offline smartwatch](https://github.com/CiprianFlorin-Ifrim/AURI_Smartwatch_Software). As well as a `smart plant pot with edge ai`.
+- 🔭 I’m currently working on a custom transformer architecture for microcontrollers, to bring Language Models to them, called SPARROW. As well as a `smart plant pot with edge voice recognition ai`.
   
 - 💬 Ask me about **3D Modelling, Electronics, Robotics, Data Analytics or AI, especially at the edge on low-powered devices.**  
   

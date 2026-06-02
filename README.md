@@ -5,8 +5,8 @@
   
 - I’m currently learning to further my knowledge on **AI, from voice recognition, to image classification and Large Language Models.**  
   
-- I’m currently working on a custom transformer architecture for microcontrollers, to bring Language Models to chips the size of a nail, all part of AURI called SPARROW, SPARROW-Next, OSPREY and SHRIKE.
+- I’m currently working on a custom language model architecture for microcontrollers, to bring them to chips the size of a nail, all part of the AURI family called SPARROW, SPARROW-Next, SHRIKE, OSPREY and MERLIN.
 
-- Also working on a `smart plant pot with offline voice recognition` running within 250KB of storage and 128KB of RAM, with a dynamic, storage-based voice recognition system based on my previous work on offline voice recognition and speech for smartwatches.
+- Also working on a `smart plant pot with offline voice recognition` running within 250KB of storage and 128KB of RAM, with a dynamic, storage-based voice recognition system founded on my previous work on offline voice recognition and speech for smartwatches.
   
 - Ask me about **3D Modelling, Electronics, Robotics, Data Analytics or AI, especially at the edge on low-powered devices.**  

@@ -1,0 +1,45 @@
+name: Profile views
+
+# Once a day, the count of profile views goes into the boot log of the README. The log is an image,
+# and an image cannot fetch a live number, so this job reads the count, draws the log again and
+# commits the new files. Reading the count adds one view, so the number runs one a day ahead of the
+# real visits.
+on:
+  schedule:
+    - cron: '17 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: views
+  cancel-in-progress: false
+
+jobs:
+  views:
+    name: Update the count
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      # Pinned to a commit, because a tag can be moved to other code.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Read the count
+        run: |
+          badge=$(curl --fail --silent --show-error --retry 3 \
+            "https://komarev.com/ghpvc/?username=ciprianflorin-ifrim")
+          views=$(printf '%s' "$badge" | sed -nE 's/.*>([0-9,]+)<\/text>.*/\1/p' | tail -n 1)
+          # A reply that is not a number stops the job, so the log never shows a bad value.
+          [[ "$views" =~ ^[0-9,]+$ ]]
+          echo "$views" > views.txt
+          echo "Views: $views"
+      - name: Draw the boot log
+        run: python3 scripts/make-boot-log.py assets
+      - name: Commit the change
+        run: |
+          git diff --quiet && { echo "No change"; exit 0; }
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add views.txt assets/boot-log-dark.svg assets/boot-log-light.svg
+          git commit --message "Update the profile view count"
+          git push

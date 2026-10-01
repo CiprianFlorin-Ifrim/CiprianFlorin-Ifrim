@@ -1,0 +1,17 @@
+# Dependabot opens a pull request for each update, and a person merges it. Nothing merges
+# automatically. The only dependency is the pinned action in the workflow.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+      time: '05:00'
+      timezone: Europe/London
+    # Dependabot moves the commit hash of a pinned action and the version comment beside it.
+    commit-message:
+      prefix: ci
+      include: scope
+    groups:
+      actions:
+        patterns: ['*']

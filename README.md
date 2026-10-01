@@ -1,12 +1,13 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/chip-dark.svg">
+    <img alt="Schematic of a 22 pin chip named CIP-1999 with Ciprian-Florin Ifrim's details on its pins: Lead AI Architect at IBM, founder of Brainquiver and Britready, MSc degrees from King's College London, Quantic and Northeastern, BEng in Robotics from Middlesex, based in London UK, programming in Python, C, C++, Rust, R and JS, microcontrollers STM32, ESP32, nRF52 and RP2, accelerators SG2002 TPU and STM32N6 NPU, CAD in SolidWorks, Onshape and NX" src="assets/chip-light.svg">
+  </picture>
+</p>
 
-<h1 align="center">Hello there, I'm Ciprian, most people know me as Cip!</h1>  
-<h3 align="center">Always fascinated by the reasoning behind technology and over the years it has become my passion.</h3>  
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=ciprianflorin-ifrim&label=Profile%20views&color=0e75b6&style=flat" alt="ciprianflorin-ifrim" /> </p>  
-  
-- I’m currently learning to further my knowledge on **AI, from voice recognition, to image classification and Large Language Models.**  
-  
-- I’m currently working on something small that's kind of big...
-
-- Also working on a `smart plant pot with offline voice recognition` running within 250KB of storage and 128KB of RAM, with a dynamic, storage-based voice recognition system founded on my previous work on offline voice recognition and speech for smartwatches.
-  
-- Ask me about **3D Modelling, Electronics, Robotics, Data Analytics or AI, especially at the edge on low-powered devices.**  
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/boot-log-dark.svg">
+    <img alt="Serial boot log. boot: CIP-1999 rev C, Ciprian-Florin Ifrim, marking Cip, London. fndr0: Future Machines, bespoke liquid-cooled computers and servers. fndr1: Brainquiver, AURI language models on MCUs, n chips, 0 cloud calls. fndr2: Britready, Life in the UK webapp with analytics and AI assistance. edu: 3 MSc and 1 BEng, robotics to AI. lang: English, Italian, Romanian, French. vdd: passion, stable. idle: robots, space, tango, piloting. rx: the count of profile views. ready: ask me about edge AI, robotics, electronics and 3D modelling" src="assets/boot-log-light.svg">
+  </picture>
+</p>

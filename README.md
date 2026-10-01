@@ -10,4 +10,5 @@
     <source media="(prefers-color-scheme: dark)" srcset="assets/boot-log-dark.svg">
     <img alt="Serial boot log. boot: CIP-1999 rev C, Ciprian-Florin Ifrim, marking Cip, London. fndr0: Future Machines, bespoke liquid-cooled computers and servers. fndr1: Brainquiver, AURI language models on MCUs, n chips, 0 cloud calls. fndr2: Britready, Life in the UK webapp with analytics and AI assistance. edu: 3 MSc and 1 BEng, robotics to AI. lang: English, Italian, Romanian, French. vdd: passion, stable. idle: robots, space, tango, piloting. rx: the count of profile views. ready: ask me about edge AI, robotics, electronics and 3D modelling" src="assets/boot-log-light.svg">
   </picture>
+  <img src="https://komarev.com/ghpvc/?username=ciprianflorin-ifrim&style=flat" width="0" height="0" alt="">
 </p>

@@ -2,8 +2,8 @@ name: Profile views
 
 # Once a day, the count of profile views goes into the boot log of the README. The log is an image,
 # and an image cannot fetch a live number, so this job reads the count, draws the log again and
-# commits the new files. Reading the count adds one view, so the number runs one a day ahead of the
-# real visits.
+# commits the new files. A read from this job is not a visit, and the count only rises when the
+# browser of a visitor loads the badge, an image of no size at the end of the README.
 on:
   schedule:
     - cron: '17 4 * * *'

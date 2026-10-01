@@ -22,7 +22,7 @@ THEMES = {
                   green="#1a7f37", amber="#9a6700"),
 }
 
-READY = "ask me about edge AI, robotics, electronics and 3D modelling"
+READY = "ask me about edge AI, robotics, electronics, 3D modelling and machining"
 
 
 def lines(views):

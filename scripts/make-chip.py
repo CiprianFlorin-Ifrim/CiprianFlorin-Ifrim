@@ -3,10 +3,11 @@
 
     python3 scripts/make-chip.py assets
 
-The script writes chip-dark.svg and chip-light.svg into the directory it is given. Pins 1 to 11 run
-down the left side and pins 12 to 22 run up the right side, the way a datasheet numbers a package. A
+The script writes chip-dark.svg and chip-light.svg into the directory it is given. Pins 1 to 12 run
+down the left side and pins 13 to 24 run up the right side, the way a datasheet numbers a package. A
 pin with a text carries a net label on a wire. A pin with None carries the blue cross of a pin that
-is not connected, and a pin with a tuple ends in a power symbol, drawn as KiCad draws it.
+is not connected, and a pin with a power tuple ends in a power symbol, drawn as KiCad draws it. A pin
+with a tie tuple is wired to the pin that the tuple names, with a junction dot where the wires meet.
 """
 import sys
 from pathlib import Path
@@ -20,24 +21,26 @@ PINS = [
     (2, "FNDR1", "Brainquiver"),
     (3, "GH1", "github.com/brainquiver"),
     (4, "FNDR2", "Britready"),
-    (5, "GH2", None),
-    (6, "MSC1", "Advanced Computing, KCL"),
-    (7, "MSC2", "Software Engineering, QSBT"),
-    (8, "MSC3", "AI and Data Science, NEU"),
-    (9, "BENG", "Robotics, MDX"),
-    (10, "EN", ("power", "+3.3V")),
-    (11, "GND", "London, UK"),
-    (12, "PROG", "Python, C, C++, Rust, R, JS"),
-    (13, "ACCL", "SG2002 TPU, STM32N6 NPU"),
-    (14, "MCU", "STM32, ESP32, nRF52, RP2"),
-    (15, "CAD", "SolidWorks, Onshape, NX"),
-    (16, "NC", None),
-    (17, "FIX", "@ciprian_ifrim"),
-    (18, "3D", "@CiprianIfrim_1527438"),
-    (19, "YT", "@ciprian-florinifrim1928"),
-    (20, "HF", "hf.co/CiprianFlorinIfrim"),
-    (21, "LNKD", "in/ciprian-ifrim"),
-    (22, "VDD", "passion +3.3V"),
+    (5, "GH2", "github.com/britready"),
+    (6, "NC", None),
+    (7, "MSC1", "Advanced Computing, KCL"),
+    (8, "MSC2", "Software Engineering, QSBT"),
+    (9, "MSC3", "AI and Data Science, NEU"),
+    (10, "BENG", "Robotics, MDX"),
+    (11, "EN", ("power", "+3.3V")),
+    (12, "GND", "London, UK"),
+    (13, "PROG", "Python, C, C++, Rust, R, JS"),
+    (14, "ACCL", "SG2002 TPU, STM32N6 NPU"),
+    (15, "MCU", "STM32, ESP32, nRF52, RP2"),
+    (16, "CAD", "SolidWorks, Onshape, NX"),
+    (17, "NC", None),
+    (18, "FIX", "@ciprian_ifrim"),
+    (19, "3D", "@CiprianIfrim_1527438"),
+    (20, "YT", "@ciprian-florinifrim1928"),
+    (21, "HF", "hf.co/CiprianFlorinIfrim"),
+    (22, "LNKD", "in/ciprian-ifrim"),
+    (23, "VDDA", ("tie", 24)),
+    (24, "VDD", "passion +3.3V"),
 ]
 
 # The colours of the KiCad default theme, in its dark and its light version.
@@ -110,7 +113,7 @@ def title_block(c, height):
     out = [f'<rect x="{x0 + 0.5}" y="{y0 + 0.5}" width="{tw}" height="{th}" fill="none" {stroke}/>',
            f'<line x1="{x0}" y1="{mid + 0.5}" x2="{x0 + tw}" y2="{mid + 0.5}" {stroke}/>',
            f'<line x1="{x0 + 116.5}" y1="{mid}" x2="{x0 + 116.5}" y2="{y0 + th}" {stroke}/>']
-    fields = [(x0 + 8, y0 + 12, "Title: ", "Ciprian-Florin Ifrim"), (x0 + 8, mid + 12, "Rev: ", "C"),
+    fields = [(x0 + 8, y0 + 12, "Title: ", "Ciprian-Florin Ifrim"), (x0 + 8, mid + 12, "Rev: ", "D"),
               (x0 + 124, mid + 12, "Sheet: ", "1/1")]
     for x, y, name, value in fields:
         out.append(f'<text x="{x}" y="{y}" dominant-baseline="central" font-size="10.5" '
@@ -148,6 +151,13 @@ def chip(theme):
         if value is None:
             out.append(f'<path d="M{end - 5} {y - 5} l10 10 M{end - 5} {y + 5} l10 -10" '
                        f'stroke="{c["nc"]}" stroke-width="1.5"/>')
+        elif isinstance(value, tuple) and value[0] == "tie":
+            ty = by + 27 + row(value[1], count) * pitch
+            jx = (x0 - 15) if left else (x1 + 15)
+            out.append(f'<path d="M{end} {y} H{jx} V{ty}" fill="none" stroke="{c["wire"]}" '
+                       'stroke-width="1.5"/>')
+            out.append(f'<circle cx="{end}" cy="{y}" r="1.8" fill="{c["pin"]}"/>')
+            out.append(f'<circle cx="{jx}" cy="{ty}" r="3" fill="{c["wire"]}"/>')
         elif isinstance(value, tuple):
             out += power_symbol(c, value[1], end, y, left)
         else:

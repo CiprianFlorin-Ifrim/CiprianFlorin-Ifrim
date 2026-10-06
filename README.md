@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/chip-dark.svg">
-    <img alt="Schematic of a 22 pin chip named CIP-1999 with Ciprian-Florin Ifrim's details on its pins: Lead AI Architect at IBM, founder of Brainquiver and Britready, MSc degrees from King's College London, Quantic and Northeastern, BEng in Robotics from Middlesex, based in London UK, programming in Python, C, C++, Rust, R and JS, microcontrollers STM32, ESP32, nRF52 and RP2, accelerators SG2002 TPU and STM32N6 NPU, CAD in SolidWorks, Onshape and NX" src="assets/chip-light.svg">
+    <img alt="Schematic of a 24 pin chip named CIP-1999 with Ciprian-Florin Ifrim's details on its pins: Lead AI Architect at IBM, founder of Brainquiver and Britready, both on GitHub, MSc degrees from King's College London, Quantic and Northeastern, BEng in Robotics from Middlesex, based in London UK, programming in Python, C, C++, Rust, R and JS, microcontrollers STM32, ESP32, nRF52 and RP2, accelerators SG2002 TPU and STM32N6 NPU, CAD in SolidWorks, Onshape and NX" src="assets/chip-light.svg">
   </picture>
 </p>
 

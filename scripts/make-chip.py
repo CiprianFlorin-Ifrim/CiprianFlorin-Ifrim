@@ -25,7 +25,7 @@ PINS = [
     (6, "NC", None),
     (7, "MSC1", "Advanced Computing, KCL"),
     (8, "MSC2", "Software Engineering, QSBT"),
-    (9, "MSC3", "AI and Data Science, NEU"),
+    (9, "MSC3", "AI and Data Science, NU"),
     (10, "BENG", "Robotics, MDX"),
     (11, "EN", ("power", "+3.3V")),
     (12, "GND", "London, UK"),

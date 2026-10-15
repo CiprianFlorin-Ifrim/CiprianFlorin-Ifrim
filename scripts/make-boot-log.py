@@ -5,7 +5,7 @@
 
 The script writes boot-log-dark.svg and boot-log-light.svg into the directory it is given. The count
 on the rx line comes from views.txt in the root of the repository, which the workflow
-.github/workflows/views.yml rewrites each day. The cursor on the last line blinks.
+.github/workflows/views.yml rewrites each week. The cursor on the last line blinks.
 """
 import sys
 from pathlib import Path

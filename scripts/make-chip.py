@@ -17,7 +17,7 @@ WIDTH = 960
 SCALE = 0.95
 
 PINS = [
-    (1, "ROLE", "Lead AI Architect, IBM"),
+    (1, "ROLE", "Senior FDE, IBM"),
     (2, "FNDR1", "Brainquiver"),
     (3, "GH1", "github.com/brainquiver"),
     (4, "FNDR2", "Britready"),

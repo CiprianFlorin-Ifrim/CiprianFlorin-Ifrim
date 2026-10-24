@@ -36,7 +36,7 @@ PINS = [
     (17, "NC", None),
     (18, "FIX", "@ciprian_ifrim"),
     (19, "3D", "@CiprianIfrim_1527438"),
-    (20, "YT", "@ciprian-florinifrim1928"),
+    (20, "YT", "@ciprian_ifrim"),
     (21, "HF", "hf.co/CiprianFlorinIfrim"),
     (22, "LNKD", "in/ciprian-ifrim"),
     (23, "VDDA", ("tie", 24)),
